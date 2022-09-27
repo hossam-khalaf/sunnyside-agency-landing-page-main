@@ -154,12 +154,14 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 7px;
-      font-size: 52px;
+      // font-size: clamp(1.2rem, 5.6vw, 5rem);
+      font-size: 42px;
       font-family: $fontFraunces;
       margin-bottom: 2.5rem;
 
       @include breakpoints-up(med) {
         margin-bottom: 7rem;
+        font-size: 52px;
       }
     }
 
