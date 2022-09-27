@@ -7,14 +7,26 @@
   min-height: 80vh;
   user-select: none;
 
+  @include breakpoints-up(med) {
+    background-image: url(../../images/desktop/image-header.jpg);
+  }
+
   &__contain {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
+
+    @include breakpoints-up(med) {
+      align-items: center;
+    }
   }
 
   &__menu {
     cursor: pointer;
+
+    @include breakpoints-up(med) {
+      display: none;
+    }
 
     i {
       font-size: 1.5rem;
@@ -31,6 +43,12 @@
     background-color: $white;
     transition: all 200ms ease-in-out;
 
+    @include breakpoints-up(med) {
+      display: block;
+      position: static;
+      background-color: transparent;
+    }
+
     &::before {
       content: "\a";
       border-style: solid;
@@ -46,8 +64,23 @@
       text-align: center;
       padding: 1.3rem 0;
 
+      @include breakpoints-up(med) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+
       li {
         padding: 1rem 0;
+
+        @include breakpoints-up(med) {
+          padding: 0;
+
+          &:not(:last-child) {
+            margin-right: 2rem;
+          }
+        }
 
         a {
           text-decoration: none;
@@ -55,6 +88,11 @@
           font-family: $fontBarlow;
           font-size: $fontBodySize;
           color: $darkGrayishBlue;
+
+          @include breakpoints-up(med) {
+            font-size: 1rem;
+            color: $white;
+          }
         }
       }
 
@@ -64,6 +102,17 @@
         padding: 1rem 2rem;
         border-radius: 30px;
         margin: 1rem 0;
+        transition: all 200ms ease-in-out;
+
+        @include breakpoints-up(med) {
+          margin: 0;
+          background-color: $white;
+          padding: 1rem 1.3rem;
+
+          &:hover {
+            background-color: rgb(94, 212, 248);
+          }
+        }
 
 
         a {
@@ -75,7 +124,14 @@
 
           &:hover {
             color: $darkBlue;
+
+            @include breakpoints-up(med) {
+              color: $white;
+            }
+
           }
+
+
         }
       }
     }
@@ -88,6 +144,12 @@
     align-items: center;
     justify-content: center;
 
+    @include breakpoints-up(med) {
+      height: 70vh;
+      margin-top: 10vh;
+      justify-content: flex-start;
+    }
+
     &-heading {
       text-align: center;
       text-transform: uppercase;
@@ -95,6 +157,10 @@
       font-size: 52px;
       font-family: $fontFraunces;
       margin-bottom: 2.5rem;
+
+      @include breakpoints-up(med) {
+        margin-bottom: 7rem;
+      }
     }
 
   }

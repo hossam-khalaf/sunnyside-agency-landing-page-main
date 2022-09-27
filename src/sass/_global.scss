@@ -7,6 +7,10 @@
 // helper classes
 .container {
   padding: 0 1rem;
+
+  @include breakpoints-up(med) {
+    padding: 1rem 2rem;
+  }
 }
 
 .show {
