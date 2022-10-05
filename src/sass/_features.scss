@@ -1,0 +1,114 @@
+.features {
+
+  .image {
+    height: 65vw;
+
+    @include breakpoints-up(med) {
+      height: 50vw;
+    }
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.438rem 1rem;
+    text-align: center;
+
+    @include breakpoints-up(med) {
+      flex: 1;
+    }
+
+    @include breakpoints-up(lg) {
+      flex: 1;
+      padding: 0;
+
+      div {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 3rem 7rem;
+      }
+    }
+
+    &__heading {
+      font-family: $fontFraunces;
+      font-size: clamp(2rem, 3vw, 4rem);
+      font-weight: 900;
+      color: $veryDarkDesaturatedBlue;
+    }
+
+    p {
+      margin: 1.875rem 0;
+      font-size: $fontBodySize;
+      font-family: $fontBarlow;
+      color: $veryDarkGrayishBlue;
+    }
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: $veryDarkDesaturatedBlue;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-family: $fontFraunces;
+      font-weight: 900;
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 17px;
+        left: -4px;
+        width: 109%;
+        height: 10px;
+        border-radius: 30px;
+        background-color: rgba(244, 162, 55, 0.366);
+      }
+    }
+  }
+
+  .features__feature-1,
+  .features__feature-2 {
+    display: flex;
+    flex-direction: column-reverse;
+
+
+    @include breakpoints-up(med) {
+      flex-direction: row;
+    }
+  }
+
+  &__feature-1 {
+
+    .image {
+      background: url('../../images/mobile/image-transform.jpg');
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoints-up(med) {
+        flex: 1;
+      }
+    }
+
+  }
+
+  &__feature-2 {
+    @include breakpoints-up(med) {
+      flex-direction: row-reverse !important;
+    }
+
+    .image {
+      background: url('../../images/mobile/image-stand-out.jpg');
+      background-position: center;
+      background-size: cover;
+
+      @include breakpoints-up(med) {
+        flex: 1;
+      }
+    }
+
+  }
+}
