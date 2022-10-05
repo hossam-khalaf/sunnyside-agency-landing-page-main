@@ -103,6 +103,7 @@
         border-radius: 30px;
         margin: 1rem 0;
         transition: all 200ms ease-in-out;
+        cursor: pointer;
 
         @include breakpoints-up(med) {
           margin: 0;
@@ -111,6 +112,10 @@
 
           &:hover {
             background-color: rgb(94, 212, 248);
+
+            a {
+              color: $white;
+            }
           }
         }
 
