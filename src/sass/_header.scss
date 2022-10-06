@@ -6,6 +6,7 @@
   color: $white;
   min-height: 80vh;
   user-select: none;
+  overflow: hidden;
 
   @include breakpoints-up(med) {
     background-image: url(../../images/desktop/image-header.jpg);
@@ -35,10 +36,10 @@
 
   &__nav {
     position: relative;
-    display: none;
+    // display: none;
     position: absolute;
     top: 5rem;
-    left: 1rem;
+    left: 40rem;
     right: 1rem;
     background-color: $white;
     transition: all 200ms ease-in-out;
