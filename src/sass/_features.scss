@@ -1,10 +1,14 @@
 .features {
 
   .image {
-    height: 65vw;
+    height: 250px;
 
     @include breakpoints-up(med) {
-      height: 50vw;
+      height: 590px;
+    }
+
+    @include breakpoints-up(xl) {
+      height: 70vh;
     }
   }
 
