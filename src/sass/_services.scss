@@ -1,0 +1,75 @@
+.services {
+  display: flex;
+  flex-direction: column;
+
+  @include breakpoints-up(med) {
+    flex-direction: row;
+
+  }
+
+  >div {
+    height: 65vh;
+
+    @include breakpoints-up(med) {
+      height: 80vh;
+    }
+  }
+
+  &__gd {
+    position: relative;
+    background: url(../../images/mobile/image-graphic-design.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    @include breakpoints-up(med) {
+      background: url(../../images/desktop/image-graphic-design.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      flex: 1;
+    }
+  }
+
+
+  &__ph {
+    position: relative;
+    background: url(../../images/mobile/image-photography.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include breakpoints-up(med) {
+      background: url(../../images/desktop/image-photography.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      flex: 1;
+    }
+  }
+
+  &__text {
+    position: absolute;
+    top: 60%;
+    text-align: center;
+
+    @include breakpoints-up(lg) {
+      padding: 0 5.5em;
+    }
+
+    @include breakpoints-up(med) {
+      padding: 0 3em;
+    }
+
+    h2 {
+      font-family: $fontFraunces;
+      color: $darkDesaturatedCyan;
+      margin: 2rem 0;
+    }
+
+    p {
+      font-family: $fontBarlow;
+      color: $darkDesaturatedCyan;
+    }
+
+  }
+}
