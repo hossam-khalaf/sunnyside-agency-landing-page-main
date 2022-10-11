@@ -1,0 +1,60 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  text-align: center;
+  background-color: #90D4C5;
+
+  &__logo {
+    margin-bottom: 2rem;
+
+    svg path {
+      fill: #2D7466;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+
+    @include breakpoints-up(lg) {
+      padding: 0 40%;
+      justify-content: space-between;
+    }
+
+    a {
+      color: $darkModerateCyan;
+      text-decoration: none;
+      font-family: $fontBarlow;
+
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+
+  &__social {
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include breakpoints-up(lg) {
+      width: 12%;
+    }
+
+
+    i {
+      color: #2D7466;
+      font-size: $fontBodySize;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}
