@@ -25,12 +25,13 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Desktop](https://github.com/hossam-khalaf/sunnyside-agency-landing-page-main/blob/master/images/sunny-desktop.png)
+![Mobile](https://github.com/hossam-khalaf/sunnyside-agency-landing-page-main/blob/master/images/sunny-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/sunnyside-agency-landing-page-solution-with-sass-p7NtR7nJ21)
+- Live Site URL: [live ](https://hossam-khalaf.github.io/sunnyside-agency-landing-page-main/)
 
 ## My process
 
@@ -46,5 +47,5 @@ Users should be able to:
 ## Author
 
 - Website - [Hossam Khalaf](https://www.hossamkhalaf.com)
-- Frontend Mentor - [@dev_hoss](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@hossam-khalaf](https://www.frontendmentor.io/profile/@hossam-khalaf)
 - Twitter - [@dev_hoss](https://www.twitter.com/dev_hoss)
